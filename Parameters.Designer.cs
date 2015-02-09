@@ -1,16 +1,16 @@
 ﻿namespace PhotoViewer
 {
-    partial class AlbumDisplay
+    partial class Parameters
     {
         /// <summary>
-        /// Variable nécessaire au concepteur.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Nettoyage des ressources utilisées.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,11 +20,11 @@
             base.Dispose(disposing);
         }
 
-        #region Code généré par le Concepteur Windows Form
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Méthode requise pour la prise en charge du concepteur - ne modifiez pas
-        /// le contenu de cette méthode avec l'éditeur de code.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -33,19 +33,19 @@
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(13, 12);
+            this.panel1.Location = new System.Drawing.Point(13, 13);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(526, 410);
-            this.panel1.TabIndex = 5;
+            this.panel1.Size = new System.Drawing.Size(366, 236);
+            this.panel1.TabIndex = 0;
             // 
-            // AlbumDisplay
+            // Parameters
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(551, 434);
+            this.ClientSize = new System.Drawing.Size(391, 261);
             this.Controls.Add(this.panel1);
-            this.Name = "AlbumDisplay";
-            this.Text = "Album Display";
+            this.Name = "Parameters";
+            this.Text = "Parameters";
             this.ResumeLayout(false);
 
         }
@@ -55,4 +55,3 @@
         private System.Windows.Forms.Panel panel1;
     }
 }
-
