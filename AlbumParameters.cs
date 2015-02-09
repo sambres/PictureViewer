@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace PhotoViewer
 {
-    public partial class Parameters : Form
+    public partial class AlbumParameters : Form
     {
-        public Parameters()
+        public AlbumParameters()
         {
             InitializeComponent();
+        }
+
+        private void ok_button_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void cancel_button_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

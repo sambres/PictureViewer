@@ -1,6 +1,6 @@
 ﻿namespace PhotoViewer
 {
-    partial class album_list
+    partial class AlbumList
     {
         /// <summary> 
         /// Variable nécessaire au concepteur.
@@ -38,9 +38,9 @@
             // 
             // album_listView
             // 
-            this.album_listView.Location = new System.Drawing.Point(12, 96);
+            this.album_listView.Location = new System.Drawing.Point(21, 65);
             this.album_listView.Name = "album_listView";
-            this.album_listView.Size = new System.Drawing.Size(355, 308);
+            this.album_listView.Size = new System.Drawing.Size(299, 243);
             this.album_listView.TabIndex = 0;
             this.album_listView.UseCompatibleStateImageBehavior = false;
             // 
@@ -61,7 +61,7 @@
             this.open_album.TabIndex = 2;
             this.open_album.Text = "Ouvrir Album";
             this.open_album.UseVisualStyleBackColor = true;
-            this.open_album.Visible = false;
+            this.open_album.Click += new System.EventHandler(this.open_album_Click);
             // 
             // modifiy_album
             // 
@@ -74,23 +74,25 @@
             // 
             // album_overview
             // 
-            this.album_overview.Location = new System.Drawing.Point(373, 96);
+            this.album_overview.Location = new System.Drawing.Point(394, 65);
             this.album_overview.Name = "album_overview";
             this.album_overview.Size = new System.Drawing.Size(100, 153);
             this.album_overview.TabIndex = 4;
             this.album_overview.TabStop = false;
             // 
-            // album_list
+            // AlbumList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSize = true;
             this.Controls.Add(this.album_overview);
             this.Controls.Add(this.modifiy_album);
             this.Controls.Add(this.open_album);
             this.Controls.Add(this.album_create);
             this.Controls.Add(this.album_listView);
-            this.Name = "album_list";
-            this.Size = new System.Drawing.Size(501, 419);
+            this.Name = "AlbumList";
+            this.Size = new System.Drawing.Size(584, 361);
             ((System.ComponentModel.ISupportInitialize)(this.album_overview)).EndInit();
             this.ResumeLayout(false);
 

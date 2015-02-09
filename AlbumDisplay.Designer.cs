@@ -28,22 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // panel1
+            // panel
             // 
-            this.panel1.Location = new System.Drawing.Point(13, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(526, 410);
-            this.panel1.TabIndex = 5;
+            this.panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel.Location = new System.Drawing.Point(0, 0);
+            this.panel.Name = "panel";
+            this.panel.Size = new System.Drawing.Size(584, 361);
+            this.panel.TabIndex = 5;
+            this.panel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Paint);
             // 
             // AlbumDisplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(551, 434);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(584, 361);
+            this.Controls.Add(this.panel);
             this.Name = "AlbumDisplay";
             this.Text = "Album Display";
             this.ResumeLayout(false);
@@ -52,7 +54,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel;
     }
 }
 

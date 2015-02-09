@@ -10,11 +10,22 @@ using System.Windows.Forms;
 
 namespace PhotoViewer
 {
-    public partial class picture_parameters : UserControl
+    public partial class AlbumList : UserControl
     {
-        public picture_parameters()
+        public AlbumList()
         {
             InitializeComponent();
+            
         }
+
+        public event EventHandler album_opened;
+
+
+        private void open_album_Click(object sender, EventArgs e)
+        {
+            album_opened(this, e);
+        }
+
+      
     }
 }

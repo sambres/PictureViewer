@@ -1,6 +1,6 @@
 ﻿namespace PhotoViewer
 {
-    partial class picture_display
+    partial class PictureDisplay
     {
         /// <summary> 
         /// Variable nécessaire au concepteur.
@@ -44,7 +44,7 @@
             // 
             this.pictureBox.Location = new System.Drawing.Point(53, 56);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(319, 267);
+            this.pictureBox.Size = new System.Drawing.Size(468, 267);
             this.pictureBox.TabIndex = 0;
             this.pictureBox.TabStop = false;
             // 
@@ -59,7 +59,7 @@
             // 
             // next_button
             // 
-            this.next_button.Location = new System.Drawing.Point(378, 178);
+            this.next_button.Location = new System.Drawing.Point(527, 178);
             this.next_button.Name = "next_button";
             this.next_button.Size = new System.Drawing.Size(41, 39);
             this.next_button.TabIndex = 2;
@@ -74,6 +74,7 @@
             this.back_button.TabIndex = 3;
             this.back_button.Text = "Retour";
             this.back_button.UseVisualStyleBackColor = true;
+            this.back_button.Click += new System.EventHandler(this.back_button_Click);
             // 
             // parameters_button
             // 
@@ -83,6 +84,7 @@
             this.parameters_button.TabIndex = 4;
             this.parameters_button.Text = "Paramètres";
             this.parameters_button.UseVisualStyleBackColor = true;
+            this.parameters_button.Click += new System.EventHandler(this.parameters_button_Click);
             // 
             // label1
             // 
@@ -120,7 +122,7 @@
             this.comments.TabIndex = 8;
             this.comments.Text = "Commentaires : ";
             // 
-            // picture_display
+            // PictureDisplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -133,8 +135,8 @@
             this.Controls.Add(this.next_button);
             this.Controls.Add(this.previous_button);
             this.Controls.Add(this.pictureBox);
-            this.Name = "picture_display";
-            this.Size = new System.Drawing.Size(422, 364);
+            this.Name = "PictureDisplay";
+            this.Size = new System.Drawing.Size(584, 361);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
