@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace PhotoViewer
 {
-    class Album
+    public class Album
     {
-        string title;
-        string subtitle;
-        string eventDate;
-        List<string> keywords;
+        public string title;
+
+        public string subtitle { get; set; }
+        public string eventDate { get; set; }
+        public List<string> keywords { get; set; }
     }
 }

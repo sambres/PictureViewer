@@ -38,11 +38,16 @@
             // 
             // album_listView
             // 
+            this.album_listView.FullRowSelect = true;
+            this.album_listView.GridLines = true;
+            this.album_listView.HideSelection = false;
             this.album_listView.Location = new System.Drawing.Point(21, 65);
+            this.album_listView.MultiSelect = false;
             this.album_listView.Name = "album_listView";
             this.album_listView.Size = new System.Drawing.Size(299, 243);
             this.album_listView.TabIndex = 0;
             this.album_listView.UseCompatibleStateImageBehavior = false;
+            this.album_listView.SelectedIndexChanged += new System.EventHandler(this.album_listView_SelectedIndexChanged);
             // 
             // album_create
             // 
@@ -52,6 +57,7 @@
             this.album_create.TabIndex = 1;
             this.album_create.Text = "Creer Album";
             this.album_create.UseVisualStyleBackColor = true;
+            this.album_create.Click += new System.EventHandler(this.album_create_Click);
             // 
             // open_album
             // 
@@ -61,6 +67,7 @@
             this.open_album.TabIndex = 2;
             this.open_album.Text = "Ouvrir Album";
             this.open_album.UseVisualStyleBackColor = true;
+            this.open_album.Visible = false;
             this.open_album.Click += new System.EventHandler(this.open_album_Click);
             // 
             // modifiy_album
@@ -71,6 +78,8 @@
             this.modifiy_album.TabIndex = 3;
             this.modifiy_album.Text = "Modifier Album";
             this.modifiy_album.UseVisualStyleBackColor = true;
+            this.modifiy_album.Visible = false;
+            this.modifiy_album.Click += new System.EventHandler(this.modifiy_album_Click);
             // 
             // album_overview
             // 

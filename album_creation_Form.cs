@@ -12,6 +12,8 @@ namespace PhotoViewer
 {
     public partial class album_creation_Form : Form
     {
+        public Album album;
+
         public album_creation_Form()
         {
             InitializeComponent();
@@ -24,12 +26,15 @@ namespace PhotoViewer
 
         private void OK_button_Click(object sender, EventArgs e)
         {
-
+            album = new Album();
+            album.title = album_name.Text;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
 
+            
+            
         }
     }
 }

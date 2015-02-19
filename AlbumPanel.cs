@@ -37,9 +37,9 @@ namespace PhotoViewer
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AlbumParameters album_parameteres = new AlbumParameters();
+            AlbumParameters album_parameters = new AlbumParameters();
 
-            switch (album_parameteres.ShowDialog())
+            switch (album_parameters.ShowDialog())
             {
                 case DialogResult.OK:
                     break;
