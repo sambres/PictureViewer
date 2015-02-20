@@ -81,15 +81,14 @@ namespace PhotoViewer
 
         }
 
-<<<<<<< HEAD
         private void AlbumList_ControlRemoved(object sender, ControlEventArgs e)
         {
             XMLSaver.WriteXml(album_list);
-=======
+        }
+
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
 
->>>>>>> d10109ec2e73a68aee7af026db4915773eb5144e
         }
 
       
