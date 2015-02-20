@@ -46,5 +46,10 @@ namespace PhotoViewer
             }
 
         }
+
+        private void add_image_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

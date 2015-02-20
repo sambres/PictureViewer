@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AlbumList));
             this.album_listView = new System.Windows.Forms.ListView();
             this.album_create = new System.Windows.Forms.Button();
             this.open_album = new System.Windows.Forms.Button();
             this.modifiy_album = new System.Windows.Forms.Button();
             this.album_overview = new System.Windows.Forms.PictureBox();
+            this.album_images = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.album_overview)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,10 +44,12 @@
             this.album_listView.FullRowSelect = true;
             this.album_listView.GridLines = true;
             this.album_listView.HideSelection = false;
+            this.album_listView.LargeImageList = this.album_images;
             this.album_listView.Location = new System.Drawing.Point(21, 65);
             this.album_listView.MultiSelect = false;
             this.album_listView.Name = "album_listView";
             this.album_listView.Size = new System.Drawing.Size(299, 243);
+            this.album_listView.SmallImageList = this.album_images;
             this.album_listView.TabIndex = 0;
             this.album_listView.UseCompatibleStateImageBehavior = false;
             this.album_listView.SelectedIndexChanged += new System.EventHandler(this.album_listView_SelectedIndexChanged);
@@ -89,6 +94,12 @@
             this.album_overview.TabIndex = 4;
             this.album_overview.TabStop = false;
             // 
+            // album_images
+            // 
+            this.album_images.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("album_images.ImageStream")));
+            this.album_images.TransparentColor = System.Drawing.Color.Transparent;
+            this.album_images.Images.SetKeyName(0, "dossier.jpg");
+            // 
             // AlbumList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -102,6 +113,7 @@
             this.Controls.Add(this.album_listView);
             this.Name = "AlbumList";
             this.Size = new System.Drawing.Size(584, 361);
+            this.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.AlbumList_ControlRemoved);
             ((System.ComponentModel.ISupportInitialize)(this.album_overview)).EndInit();
             this.ResumeLayout(false);
 
@@ -114,5 +126,6 @@
         private System.Windows.Forms.Button open_album;
         private System.Windows.Forms.Button modifiy_album;
         private System.Windows.Forms.PictureBox album_overview;
+        private System.Windows.Forms.ImageList album_images;
     }
 }

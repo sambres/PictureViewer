@@ -18,6 +18,8 @@ namespace PhotoViewer
         {
             InitializeComponent();
             album_list = new List<Album>();
+
+            album_list = XMLSaver.ReadXml();
             
         }
 
@@ -42,6 +44,8 @@ namespace PhotoViewer
                     //Rajout de l'album dans la lstView
                     ListViewItem itm = new ListViewItem(f.album.title);
                     //itm.SubItems.Add(f.album.subtitle);
+
+                    itm.ImageIndex = 0;
 
                     album_listView.Items.Add(itm);
                     
@@ -68,11 +72,18 @@ namespace PhotoViewer
                 modifiy_album.Visible = false;
 
             }
+            //album_overview.Image.Save(filename,System.Drawing.Imaging.ImageFormat.Jpeg);
+
         }
 
         private void modifiy_album_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void AlbumList_ControlRemoved(object sender, ControlEventArgs e)
+        {
+            XMLSaver.WriteXml(album_list);
         }
 
       

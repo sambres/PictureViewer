@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.back_button = new System.Windows.Forms.Button();
             this.picture_listView = new System.Windows.Forms.ListView();
             this.diaporama_button = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.picture_display_button = new System.Windows.Forms.Button();
+            this.imageList = new System.Windows.Forms.ImageList(this.components);
+            this.add_image = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // back_button
@@ -47,9 +50,11 @@
             // 
             // picture_listView
             // 
+            this.picture_listView.LargeImageList = this.imageList;
             this.picture_listView.Location = new System.Drawing.Point(16, 63);
             this.picture_listView.Name = "picture_listView";
             this.picture_listView.Size = new System.Drawing.Size(422, 249);
+            this.picture_listView.SmallImageList = this.imageList;
             this.picture_listView.TabIndex = 1;
             this.picture_listView.UseCompatibleStateImageBehavior = false;
             this.picture_listView.SelectedIndexChanged += new System.EventHandler(this.picture_listView_SelectedIndexChanged);
@@ -83,10 +88,27 @@
             this.picture_display_button.UseVisualStyleBackColor = true;
             this.picture_display_button.Click += new System.EventHandler(this.picture_display_button_Click);
             // 
+            // imageList
+            // 
+            this.imageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // add_image
+            // 
+            this.add_image.Location = new System.Drawing.Point(42, 318);
+            this.add_image.Name = "add_image";
+            this.add_image.Size = new System.Drawing.Size(117, 40);
+            this.add_image.TabIndex = 5;
+            this.add_image.Text = "Ajouter une Image";
+            this.add_image.UseVisualStyleBackColor = true;
+            this.add_image.Click += new System.EventHandler(this.add_image_Click);
+            // 
             // AlbumPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.add_image);
             this.Controls.Add(this.picture_display_button);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.diaporama_button);
@@ -105,5 +127,7 @@
         private System.Windows.Forms.Button diaporama_button;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button picture_display_button;
+        private System.Windows.Forms.ImageList imageList;
+        private System.Windows.Forms.Button add_image;
     }
 }
