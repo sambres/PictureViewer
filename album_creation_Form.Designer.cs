@@ -37,6 +37,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.image_choice = new System.Windows.Forms.Button();
             this.add_image = new System.Windows.Forms.Button();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,6 +90,7 @@
             this.listView1.TabIndex = 4;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.ListView1_SelectedIndexChanged);
             // 
             // image_name
             // 
@@ -96,9 +99,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox1.Location = new System.Drawing.Point(285, 70);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(115, 158);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
@@ -110,7 +115,7 @@
             this.image_choice.TabIndex = 6;
             this.image_choice.Text = "Choix de l\'image";
             this.image_choice.UseVisualStyleBackColor = true;
-            this.image_choice.Click += new System.EventHandler(this.button1_Click);
+            this.image_choice.Click += new System.EventHandler(this.Choice_Click);
             // 
             // add_image
             // 
@@ -120,6 +125,14 @@
             this.add_image.TabIndex = 7;
             this.add_image.Text = "Ajout de l\'image";
             this.add_image.UseVisualStyleBackColor = true;
+            this.add_image.Click += new System.EventHandler(this.add_image_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All file" +
+    "s (*.*)|*.*";
+            this.openFileDialog1.Title = "Select an Image file ";
             // 
             // album_creation_Form
             // 
@@ -153,5 +166,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button image_choice;
         private System.Windows.Forms.Button add_image;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

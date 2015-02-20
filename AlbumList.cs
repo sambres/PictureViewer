@@ -36,10 +36,10 @@ namespace PhotoViewer
             switch (f.ShowDialog())
             {
                 case System.Windows.Forms.DialogResult.OK:
-                    //Rajout de l'alul dans la liste
+                    //Rajout de l'album dans la liste
                     album_list.Add(f.album);
 
-                    //Rajout de l'album dans la lstView
+                    //Rajout de l'album dans la listView
                     ListViewItem itm = new ListViewItem(f.album.title);
                     //itm.SubItems.Add(f.album.subtitle);
 
@@ -71,6 +71,11 @@ namespace PhotoViewer
         }
 
         private void modifiy_album_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
 
         }

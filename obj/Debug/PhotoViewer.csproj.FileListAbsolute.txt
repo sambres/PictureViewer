@@ -13,3 +13,18 @@ C:\Users\adrien\Documents\Visual Studio 2012\Projects\Microsoft C\PhotoViewer\ob
 C:\Users\adrien\Documents\Visual Studio 2012\Projects\Microsoft C\PhotoViewer\obj\Debug\PhotoViewer.AlbumParameters.resources
 C:\Users\adrien\Documents\Visual Studio 2012\Projects\Microsoft C\PhotoViewer\obj\Debug\PhotoViewer.PictureDisplay.resources
 C:\Users\adrien\Documents\Visual Studio 2012\Projects\Microsoft C\PhotoViewer\obj\Debug\PhotoViewer.PictureParameters.resources
+C:\Users\pierre\Desktop\C#\Picture Viewer\Picture viewer\PictureViewer\bin\Debug\PhotoViewer.exe.config
+C:\Users\pierre\Desktop\C#\Picture Viewer\Picture viewer\PictureViewer\obj\Debug\PhotoViewer.exe
+C:\Users\pierre\Desktop\C#\Picture Viewer\Picture viewer\PictureViewer\obj\Debug\PhotoViewer.pdb
+C:\Users\pierre\Desktop\C#\Picture Viewer\Picture viewer\PictureViewer\bin\Debug\PhotoViewer.exe
+C:\Users\pierre\Desktop\C#\Picture Viewer\Picture viewer\PictureViewer\bin\Debug\PhotoViewer.pdb
+C:\Users\pierre\Desktop\C#\Picture Viewer\Picture viewer\PictureViewer\obj\Debug\PhotoViewer.csprojResolveAssemblyReference.cache
+C:\Users\pierre\Desktop\C#\Picture Viewer\Picture viewer\PictureViewer\obj\Debug\PhotoViewer.AlbumDisplay.resources
+C:\Users\pierre\Desktop\C#\Picture Viewer\Picture viewer\PictureViewer\obj\Debug\PhotoViewer.AlbumPanel.resources
+C:\Users\pierre\Desktop\C#\Picture Viewer\Picture viewer\PictureViewer\obj\Debug\PhotoViewer.AlbumParameters.resources
+C:\Users\pierre\Desktop\C#\Picture Viewer\Picture viewer\PictureViewer\obj\Debug\PhotoViewer.album_creation_Form.resources
+C:\Users\pierre\Desktop\C#\Picture Viewer\Picture viewer\PictureViewer\obj\Debug\PhotoViewer.AlbumList.resources
+C:\Users\pierre\Desktop\C#\Picture Viewer\Picture viewer\PictureViewer\obj\Debug\PhotoViewer.PictureParameters.resources
+C:\Users\pierre\Desktop\C#\Picture Viewer\Picture viewer\PictureViewer\obj\Debug\PhotoViewer.PictureDisplay.resources
+C:\Users\pierre\Desktop\C#\Picture Viewer\Picture viewer\PictureViewer\obj\Debug\PhotoViewer.Properties.Resources.resources
+C:\Users\pierre\Desktop\C#\Picture Viewer\Picture viewer\PictureViewer\obj\Debug\PhotoViewer.csproj.GenerateResource.Cache
